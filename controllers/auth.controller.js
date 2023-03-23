@@ -1,8 +1,7 @@
-export const registerUser = (req, res, next) => {
-  console.log(req.body);
+export const userRegister = (req, res) => {
   res.json({ ok: true });
 };
 
-export const users = (req, res, next) => {
+export const users = (req, res) => {
   res.json({ ok: true });
 };
