@@ -1,10 +1,23 @@
-import express from "express";
-import { userRegister, users } from "../controllers/auth.controller.js";
+import { Router } from "express";
+import {
+  createUser,
+  users,
+  user,
+  updateUser,
+  deletUser,
+} from "../controllers/auth.controller.js";
 import { body } from "express-validator";
 import { validationResultExpress } from "../middlewares/validatorResultResponse.js";
-const router = express.Router();
+const router = Router();
 
-router.get("/", users);
+router.get("/", users, validationResultExpress);
+router.get("/user", user, validationResultExpress);
+router.put(
+  "/user/:email",
+  [body("name", "EL nombre tiene que ser un string").trim().isString()],
+  updateUser,
+  validationResultExpress
+);
 router.post(
   "/register",
   [
@@ -19,7 +32,8 @@ router.post(
       .notEmpty(),
   ],
   validationResultExpress,
-  userRegister
+  createUser
 );
+router.delete("/user/:email", deletUser, validationResultExpress);
 
 export default router;
