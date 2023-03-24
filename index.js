@@ -1,5 +1,5 @@
 import "dotenv/config";
-import "./scr/database/connectdb.js";
+import "./scr/database/connectDb.js";
 import express from "express";
 import authRouter from "./scr/routes/auth.route.js";
 
