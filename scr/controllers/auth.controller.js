@@ -8,11 +8,9 @@ export const createUser = async (req, res) => {
     await user.save();
     res.status(201).json({ ok: true });
   } catch (error) {
-    error.code === 11000 && {
-      response: res.status(400).json({ error: "El email ya esta registrado" }),
-    };
-
-    return res.status(500).json({ error: "server error" });
+    error.code === 11000
+      ? res.status(400).json({ error: "El email ya esta registrado" })
+      : res.status(500).json({ error: "server error" });
   }
 };
 
