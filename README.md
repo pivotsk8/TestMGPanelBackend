@@ -47,5 +47,8 @@ Antes de ejecutar el proyecto, asegúrate de tener lo siguiente instalado en tu 
  - Eliminar usuario
    metodo delete
    http://localhost:7124/user/eamil("email del usuario que quieres eliminar")
+   
+   ## El frontend esta implementado en otro servicio para acceder te dejo el link del github:
+   https://github.com/pivotsk8/testMGPanelFrontedn
  
   
