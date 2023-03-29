@@ -10,6 +10,7 @@ Antes de ejecutar el proyecto, asegúrate de tener lo siguiente instalado en tu 
 
 - Node.js
 - MongoDB
+- Express
 - Visual Studio Code (o cualquier otro editor de texto)
 
 ## Instalación
