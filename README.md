@@ -1,3 +1,5 @@
 ### TESTMGPANELBACKEND
 
-Este proyecto utiliza Express y Mongoose para crear una aplicación web y conectarse a una base de datos MongoDB. Además, se utiliza variables de entorno para proteger las credenciales y se incluyen scripts útiles para ejecutar la aplicación.
+Este es un proyecto de Node.js que utiliza Express como framework web y Mongoose para conectarse a una base de datos MongoDB. También utiliza variables de entorno para almacenar información sensible y scripts para facilitar el desarrollo.
+
+Se separaron responsabilidades en diferentes componentes como lo indica el cleanCode y se trato de moduladizar como tambien estandarizar al maximo estos ultimos
